@@ -1,42 +1,31 @@
-Run started:2025-10-27 15:33:41.639894
+Run started:2025-10-27 15:35:08.101177
 
 Test results:
->> Issue: [B110:try_except_pass] Try, Except, Pass detected.
-   Severity: Low   Confidence: High
-   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
-   More Info: https://bandit.readthedocs.io/en/1.8.6/plugins/b110_try_except_pass.html
-   Location: .\inventory_system.py:41:4
-40	            del stock_data[item]
-41	    except:
-42	        pass
-43	
-
---------------------------------------------------
 >> Issue: [B307:blacklist] Use of possibly insecure function - consider using safer ast.literal_eval.
    Severity: Medium   Confidence: High
    CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
    More Info: https://bandit.readthedocs.io/en/1.8.6/blacklists/blacklist_calls.html#b307-eval
-   Location: .\inventory_system.py:125:4
-124	    printData()
-125	    eval("print('eval used')")  # dangerous
-126	
+   Location: .\inventory_system.py:127:4
+126	    printData()
+127	    eval("print('eval used')")  # dangerous
+128	
 
 --------------------------------------------------
 
 Code scanned:
-	Total lines of code: 103
+	Total lines of code: 105
 	Total lines skipped (#nosec): 0
 	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
 
 Run metrics:
 	Total issues (by severity):
 		Undefined: 0
-		Low: 1
+		Low: 0
 		Medium: 1
 		High: 0
 	Total issues (by confidence):
 		Undefined: 0
 		Low: 0
 		Medium: 0
-		High: 2
+		High: 1
 Files skipped (0):

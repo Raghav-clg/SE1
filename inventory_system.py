@@ -38,8 +38,10 @@ def removeItem(item, qty):
         stock_data[item] -= qty
         if stock_data[item] <= 0:
             del stock_data[item]
-    except:
-        pass
+    except KeyError:
+        print(f"ERR: Item '{item}' not found in stock.")
+    except TypeError:
+        print(f"ERR: Invalid quantity type for item '{item}'.")
 
 def getQty(item):
     """
