@@ -108,6 +108,7 @@ def checkLowItems(threshold=5):
     return result
 
 def main():
+    global stock_data
     """
     Main function to demonstrate and test the inventory system.
 

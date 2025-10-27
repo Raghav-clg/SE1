@@ -1,19 +1,19 @@
-Run started:2025-10-27 15:35:08.101177
+Run started:2025-10-27 15:37:32.096144
 
 Test results:
 >> Issue: [B307:blacklist] Use of possibly insecure function - consider using safer ast.literal_eval.
    Severity: Medium   Confidence: High
    CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
    More Info: https://bandit.readthedocs.io/en/1.8.6/blacklists/blacklist_calls.html#b307-eval
-   Location: .\inventory_system.py:127:4
-126	    printData()
-127	    eval("print('eval used')")  # dangerous
-128	
+   Location: .\inventory_system.py:128:4
+127	    printData()
+128	    eval("print('eval used')")  # dangerous
+129	
 
 --------------------------------------------------
 
 Code scanned:
-	Total lines of code: 105
+	Total lines of code: 106
 	Total lines skipped (#nosec): 0
 	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
 
