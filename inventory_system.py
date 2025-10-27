@@ -10,7 +10,7 @@ from datetime import datetime
 # Global variable
 stock_data = {}
 
-def addItem(item="default", qty=0, logs=[]):
+def add_item(item="default", qty=0, logs=[]):
     """
     Adds a specified quantity of an item to the stock.
 
@@ -23,7 +23,7 @@ def addItem(item="default", qty=0, logs=[]):
     stock_data[item] = stock_data.get(item, 0) + qty
 
 
-def removeItem(item, qty):
+def remove_item(item, qty):
     """
     Removes a specified quantity of an item from the stock.
 
@@ -43,7 +43,7 @@ def removeItem(item, qty):
     except TypeError:
         print(f"ERR: Invalid quantity type for item '{item}'.")
 
-def getQty(item):
+def get_qty(item):
     """
     Retrieves the current quantity of a specific item.
 
@@ -56,7 +56,7 @@ def getQty(item):
     """
     return stock_data[item]
 
-def loadData(file="inventory.json"):
+def load_data(file="inventory.json"):
     """
     Loads the stock inventory from a JSON file.
 
@@ -71,7 +71,7 @@ def loadData(file="inventory.json"):
     with open(file, "r", encoding="utf-8") as f:                
         stock_data = json.loads(f.read())
 
-def saveData(file="inventory.json"):
+def save_data(file="inventory.json"):
     """
     Saves the current stock inventory to a JSON file.
 
@@ -82,13 +82,13 @@ def saveData(file="inventory.json"):
     with open(file, "w", encoding="utf-8") as f:
         f.write(json.dumps(stock_data))
 
-def printData():
+def print_data():
     """Prints a formatted report of all items and their quantities."""
     print("Items Report")
     for i in stock_data:
         print(i, "->", stock_data[i])
 
-def checkLowItems(threshold=5):
+def check_low_items(threshold=5):
     """
     Finds all items with a quantity below a specified threshold.
 
@@ -113,16 +113,16 @@ def main():
     Runs a sequence of operations: adding items, removing items,
     checking quantities, checking low stock, saving, and loading.
     """
-    addItem("apple", 10)
-    addItem("banana", -2)
-    addItem(123, "ten")  # invalid types, no check
-    removeItem("apple", 3)
-    removeItem("orange", 1)
-    print("Apple stock:", getQty("apple"))
-    print("Low items:", checkLowItems())
-    saveData()
-    loadData()
-    printData()
+    add_item("apple", 10)
+    add_item("banana", -2)
+    add_item(123, "ten")  # invalid types, no check
+    remove_item("apple", 3)
+    remove_item("orange", 1)
+    print("Apple stock:", get_qty("apple"))
+    print("Low items:", check_low_items())
+    save_data()
+    load_data()
+    print_data()
     eval("print('eval used')")  # dangerous
 
 main()
