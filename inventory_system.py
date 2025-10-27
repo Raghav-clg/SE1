@@ -67,10 +67,9 @@ def loadData(file="inventory.json"):
         file (str): The name of the JSON file to read from.
                     Defaults to "inventory.json".
     """
-    f = open(file, "r")
     global stock_data
-    stock_data = json.loads(f.read())
-    f.close()
+    with open(file, "r", encoding="utf-8") as f:                
+        stock_data = json.loads(f.read())
 
 def saveData(file="inventory.json"):
     """
@@ -80,9 +79,8 @@ def saveData(file="inventory.json"):
         file (str): The name of the JSON file to write to.
                     Defaults to "inventory.json".
     """
-    f = open(file, "w")
-    f.write(json.dumps(stock_data))
-    f.close()
+    with open(file, "w", encoding="utf-8") as f:
+        f.write(json.dumps(stock_data))
 
 def printData():
     """Prints a formatted report of all items and their quantities."""
