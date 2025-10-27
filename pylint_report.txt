@@ -17,5 +17,5 @@ inventory_system.py:91:0: C0103: Function name "checkLowItems" doesn't conform t
 inventory_system.py:125:4: W0123: Use of eval (eval-used)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.73/10 (previous run: 4.90/10, +1.84)
+Your code has been rated at 6.73/10 (previous run: 6.73/10, +0.00)
 
