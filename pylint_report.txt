@@ -2,7 +2,7 @@
 inventory_system.py:127:0: C0304: Final newline missing (missing-final-newline)
 inventory_system.py:13:0: C0103: Function name "addItem" doesn't conform to snake_case naming style (invalid-name)
 inventory_system.py:13:0: W0102: Dangerous default value [] as argument (dangerous-default-value)
-inventory_system.py:24:16: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+inventory_system.py:13:35: W0613: Unused argument 'logs' (unused-argument)
 inventory_system.py:26:0: C0103: Function name "removeItem" doesn't conform to snake_case naming style (invalid-name)
 inventory_system.py:41:4: W0702: No exception type(s) specified (bare-except)
 inventory_system.py:44:0: C0103: Function name "getQty" doesn't conform to snake_case naming style (invalid-name)
@@ -16,7 +16,8 @@ inventory_system.py:81:8: R1732: Consider using 'with' for resource-allocating o
 inventory_system.py:85:0: C0103: Function name "printData" doesn't conform to snake_case naming style (invalid-name)
 inventory_system.py:91:0: C0103: Function name "checkLowItems" doesn't conform to snake_case naming style (invalid-name)
 inventory_system.py:125:4: W0123: Use of eval (eval-used)
+inventory_system.py:8:0: W0611: Unused datetime imported from datetime (unused-import)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.53/10 (previous run: 6.73/10, -0.20)
+Your code has been rated at 6.25/10 (previous run: 6.53/10, -0.28)
 

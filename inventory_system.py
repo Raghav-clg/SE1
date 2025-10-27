@@ -21,7 +21,7 @@ def addItem(item="default", qty=0, logs=[]):
     if not item:
         return
     stock_data[item] = stock_data.get(item, 0) + qty
-    logs.append("%s: Added %d of %s" % (str(datetime.now()), qty, item))
+
 
 def removeItem(item, qty):
     """
