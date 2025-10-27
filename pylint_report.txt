@@ -1,4 +1,5 @@
 ************* Module inventory_system
+inventory_system.py:127:0: C0304: Final newline missing (missing-final-newline)
 inventory_system.py:13:0: C0103: Function name "addItem" doesn't conform to snake_case naming style (invalid-name)
 inventory_system.py:13:0: W0102: Dangerous default value [] as argument (dangerous-default-value)
 inventory_system.py:24:16: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
@@ -17,5 +18,5 @@ inventory_system.py:91:0: C0103: Function name "checkLowItems" doesn't conform t
 inventory_system.py:125:4: W0123: Use of eval (eval-used)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.73/10 (previous run: 6.73/10, +0.00)
+Your code has been rated at 6.53/10 (previous run: 6.73/10, -0.20)
 
