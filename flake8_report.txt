@@ -1,12 +1,6 @@
 inventory_system.py:8:1: F401 'datetime.datetime' imported but unused
 inventory_system.py:13:1: E302 expected 2 blank lines, found 1
-inventory_system.py:46:1: E302 expected 2 blank lines, found 1
-inventory_system.py:59:1: E302 expected 2 blank lines, found 1
-inventory_system.py:71:49: W291 trailing whitespace
-inventory_system.py:74:1: E302 expected 2 blank lines, found 1
-inventory_system.py:85:1: E302 expected 2 blank lines, found 1
-inventory_system.py:91:1: E302 expected 2 blank lines, found 1
-inventory_system.py:108:1: E302 expected 2 blank lines, found 1
-inventory_system.py:109:5: F824 `global stock_data` is unused: name is never assigned in scope
-inventory_system.py:128:1: E305 expected 2 blank lines after class or function definition, found 1
-inventory_system.py:128:7: W292 no newline at end of file
+inventory_system.py:27:1: E303 too many blank lines (3)
+inventory_system.py:74:49: W291 trailing whitespace
+inventory_system.py:116:5: F824 `global stock_data` is unused: name is never assigned in scope
+inventory_system.py:135:7: W292 no newline at end of file

@@ -23,6 +23,7 @@ def add_item(item="default", qty=0, logs=[]):
     stock_data[item] = stock_data.get(item, 0) + qty
 
 
+
 def remove_item(item, qty):
     """
     Removes a specified quantity of an item from the stock.
@@ -43,6 +44,7 @@ def remove_item(item, qty):
     except TypeError:
         print(f"ERR: Invalid quantity type for item '{item}'.")
 
+
 def get_qty(item):
     """
     Retrieves the current quantity of a specific item.
@@ -55,6 +57,7 @@ def get_qty(item):
              Raises KeyError if the item is not found.
     """
     return stock_data[item]
+
 
 def load_data(file="inventory.json"):
     """
@@ -71,6 +74,7 @@ def load_data(file="inventory.json"):
     with open(file, "r", encoding="utf-8") as f:                
         stock_data = json.loads(f.read())
 
+
 def save_data(file="inventory.json"):
     """
     Saves the current stock inventory to a JSON file.
@@ -82,11 +86,13 @@ def save_data(file="inventory.json"):
     with open(file, "w", encoding="utf-8") as f:
         f.write(json.dumps(stock_data))
 
+
 def print_data():
     """Prints a formatted report of all items and their quantities."""
     print("Items Report")
     for i in stock_data:
         print(f"{i} -> {stock_data[i]}")
+
 
 def check_low_items(threshold=5):
     """
@@ -104,6 +110,7 @@ def check_low_items(threshold=5):
         if stock_data[i] < threshold:
             result.append(i)
     return result
+
 
 def main():
     global stock_data
@@ -123,6 +130,6 @@ def main():
     save_data()
     load_data()
     print_data()
-    eval("print('eval used')")  # dangerous
+
 
 main()
