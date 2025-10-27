@@ -86,7 +86,7 @@ def print_data():
     """Prints a formatted report of all items and their quantities."""
     print("Items Report")
     for i in stock_data:
-        print(i, "->", stock_data[i])
+        print(f"{i} -> {stock_data[i]}")
 
 def check_low_items(threshold=5):
     """

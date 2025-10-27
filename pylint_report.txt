@@ -11,5 +11,5 @@ inventory_system.py:126:4: W0123: Use of eval (eval-used)
 inventory_system.py:8:0: W0611: Unused datetime imported from datetime (unused-import)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.00/10 (previous run: 6.60/10, +1.40)
+Your code has been rated at 8.00/10 (previous run: 8.00/10, +0.00)
 
